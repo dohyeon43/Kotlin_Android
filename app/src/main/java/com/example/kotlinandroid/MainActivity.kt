@@ -1,8 +1,10 @@
 package com.example.kotlinandroid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.kotlinandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +15,10 @@ class MainActivity : AppCompatActivity() {
        val binding = ActivityMainBinding.inflate(layoutInflater) //binding 객체 호출
         setContentView(binding.root)
 
-        binding.activity1.setText("activiry 1")
+        binding.activity1.setOnClickListener(){
+            val intent = Intent(this,Activity1::class.java)
+            startActivity(intent)
+        }
 
         }
     }
