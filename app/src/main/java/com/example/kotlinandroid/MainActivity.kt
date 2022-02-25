@@ -19,6 +19,26 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,Activity1::class.java)
             startActivity(intent)
         }
-
+        binding.activity2.setOnClickListener(){
+            val intent = Intent(this,Activity2::class.java)
+            startActivity(intent)
         }
+        binding.activity3.setOnClickListener(){
+            val intent = Intent(this,Activity3::class.java)
+            startActivity(intent)
+        }
+        binding.activity4.setOnClickListener(){
+            val intent = Intent(this,Activity4::class.java)
+            startActivity(intent)
+        }
+        binding.activity5.setOnClickListener(){
+            val intent = Intent(this,Activity5::class.java)
+            startActivity(intent)
+        }
+        binding.activity6.setOnClickListener(){
+            val intent = Intent(this,Activity6::class.java)
+            startActivity(intent)
+        }
+
     }
+}
