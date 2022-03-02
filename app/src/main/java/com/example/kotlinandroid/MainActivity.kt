@@ -19,43 +19,17 @@ class MainActivity : AppCompatActivity() {
         //자동으로 만들어지는 클래스의 이름은 레이아웃 xml 파일 명을 따름름
        val binding = ActivityMainBinding.inflate(layoutInflater) //binding 객체 호출
         setContentView(binding.root)
-
-        binding.activity1.setOnClickListener(){ //임시 액티비티 전환 버튼
-            val intent = Intent(this,Activity1::class.java)
-            startActivity(intent)
-        }
-        binding.activity2.setOnClickListener(){
-            val intent = Intent(this,Activity2::class.java)
-            startActivity(intent)
-        }
-        binding.activity3.setOnClickListener(){
-            val intent = Intent(this,Activity3::class.java)
-            startActivity(intent)
-        }
-        binding.activity4.setOnClickListener(){
-            val intent = Intent(this,Activity4::class.java)
-            startActivity(intent)
-        }
-        binding.activity5.setOnClickListener(){
-            val intent = Intent(this,Activity5::class.java)
-            startActivity(intent)
-        }
-        binding.activity6.setOnClickListener(){
-            val intent = Intent(this,Activity6::class.java)
-            startActivity(intent)
-        }
-
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         when (event?.action){
-            MotionEvent.ACTION_MOVE -> {
+            MotionEvent.ACTION_MOVE -> { //스와이프
 
             }
-            MotionEvent.ACTION_UP ->{
+            MotionEvent.ACTION_UP ->{// 손 뗌
 
             }
-            MotionEvent.ACTION_DOWN -> {
+            MotionEvent.ACTION_DOWN -> { //터치 직후
 
             }
         }
