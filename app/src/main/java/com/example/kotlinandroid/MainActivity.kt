@@ -1,27 +1,23 @@
 package com.example.kotlinandroid
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
-import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintSet
-import androidx.core.view.isInvisible
-import com.example.kotlinandroid.databinding.ActivityMainBinding
+import com.example.kotlinandroid.databinding.ActivityMemoBinding
 
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG,"MainActivity - onCreate(),called")
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_memo)
 
         //뷰 바인딩
 
         //자동으로 만들어지는 클래스의 이름은 레이아웃 xml 파일 명을 따름름
-       val binding = ActivityMainBinding.inflate(layoutInflater) //binding 객체 호출
+       val binding = ActivityMemoBinding.inflate(layoutInflater) //binding 객체 호출
         setContentView(binding.root)
     }
 
@@ -37,9 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {// onResume 액티비티가 포커스를 빼앗겨 정지한 상태
         super.onPause()
-        Log.d(TAG,"MainActivity - onPause(),called")
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.name.visibility = View.VISIBLE
+        Log.d(TAG,"MemoActivity - onPause(),called")
     }
 
     override fun onStop() {// onStop 화면에서 액티비티가 내려간 상태
