@@ -13,7 +13,7 @@ class MyRecyclerAdapter: RecyclerView.Adapter<MyViewHolder>() {
 
         //연결할 레이아웃 설정
 
-        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.layout_recyclerview_item, parent))
+        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.layout_recyclerview_item, parent, false))
     }
 
     //목록의 아이템 수
