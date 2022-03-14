@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.recyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         Log.d(TAG,"MainActivity - onCreate(),called")
         Log.d(TAG,"MainActivity - this.modelList.size : ${this.modelList.size}")
         for (i in 1..10){
@@ -30,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         myRecyclerAdapter.submitList(this.modelList)
 
         // 리사이클러 뷰 설정
-        my_recycler_view.apply {
+        binding.my_recycler_view.apply {
             layoutManeger = LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL,false)
 
             //어답터 장착

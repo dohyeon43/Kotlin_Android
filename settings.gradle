@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Android_kotlin"
 include ':app'
 include ':recyclerview'
+include ':dialog'
