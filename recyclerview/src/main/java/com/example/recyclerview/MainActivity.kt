@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerview.databinding.ActivityMainBinding
+import com.example.recyclerview.recyclerAdapter.MyRecyclerAdapter
 
 class MainActivity : AppCompatActivity() {
 
