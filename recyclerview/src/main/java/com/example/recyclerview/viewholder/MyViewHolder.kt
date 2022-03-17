@@ -1,9 +1,12 @@
-package com.example.recyclerview
+package com.example.recyclerview.viewholder
 
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.recyclerview.App
+import com.example.recyclerview.MyModel
+import com.example.recyclerview.R
 
 //커스텀 뷰홀더
 class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {

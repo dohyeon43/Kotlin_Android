@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerview.MyModel
-import com.example.recyclerview.MyViewHolder
+import com.example.recyclerview.viewholder.MyViewHolder
 import com.example.recyclerview.R
 
 class MyRecyclerAdapter: RecyclerView.Adapter<MyViewHolder>() {
