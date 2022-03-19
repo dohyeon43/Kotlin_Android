@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.view.View
 import com.example.dialog.databinding.ActivityMainBinding
 import com.example.dialog.databinding.CustomDialogBinding
-import kotlinx.android.synthetic.main.custom_dialog.*
 
 class CustomDialog (context: Context,
                     myCustomDialogInterface: CustomDialogInterface)
@@ -33,7 +32,6 @@ class CustomDialog (context: Context,
         val binding = CustomDialogBinding.inflate(layoutInflater)
         //배경 투명
         window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        like_btn
 
         //좋아요 버튼 클릭
         CustomBinding.likeBtn.setOnClickListener(){
@@ -46,9 +44,4 @@ class CustomDialog (context: Context,
         }
     }
 
-    override fun onCLick(view: View){
-        when(view){
-            like_
-        }
-    }
 }

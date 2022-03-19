@@ -34,11 +34,5 @@ class MainActivity : AppCompatActivity() {
         myRecyclerAdapter.submitList(this.modelList)
 
         // 리사이클러 뷰 설정
-        binding.my_recycler_view.apply {
-            layoutManeger = LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL,false)
-
-            //어답터 장착
-            adapter = myRecyclerAdapter
-        }
     }
 }

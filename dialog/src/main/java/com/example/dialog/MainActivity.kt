@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(),CustomDialogInterface {
         setContentView(R.layout.activity_main)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         //다이얼로그 열기 버튼
-        binding.dialogButton.setOnClickListener(){
+        binding.dialogBtn.setOnClickListener(){
             val CustomDialog = CustomDialog(this,this)
             CustomDialog.show()
         }
