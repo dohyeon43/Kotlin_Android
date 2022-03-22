@@ -2,8 +2,11 @@ package com.example.spinner
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +22,17 @@ class MainActivity : AppCompatActivity() {
         ).also { adapter ->
             spinner.onItemSelectedListener
             spinner.adapter = adapter
+            spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                override fun onNothingSelected(p0: AdapterView<*>?) {
+
+                }
+
+                override fun onItemSelected(p0: AdapterView<*>?, p1: View?, pos: Int, p3: Long) {
+                    if(pos>0) Toast.makeText(this@MainActivity,"${pos}이 선택되었습니다.",
+                        Toast.LENGTH_SHORT).show()
+                }
+
+            }
         }
     }
 }
