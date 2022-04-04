@@ -2,37 +2,48 @@ package com.example.recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerview.databinding.ActivityMainBinding
-import com.example.recyclerview.recyclerAdapter.MyRecyclerAdapter
+import com.example.recyclerview.databinding.ItemMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     var TAG: String = "로그"
-
-    var modelList = ArrayList<MyModel>()
-
-    private lateinit var myRecyclerAdapter: MyRecyclerAdapter
-
+    val datas = mutableListOf<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
         val binding = ActivityMainBinding.inflate(layoutInflater)
-        Log.d(TAG,"MainActivity - onCreate(),called")
-        Log.d(TAG,"MainActivity - this.modelList.size : ${this.modelList.size}")
+        setContentView(binding.root)
         for (i in 1..10){
-            val myModel = MyModel(name = "김도현 $i",profilImage = "")
-            this.modelList.add(myModel)
+            datas.add("item $i")
         }
-        Log.d(TAG,"MainActivity - this.modelList.size : ${this.modelList.size}")
+        //Adapter : 뷰홀더에 구성된 레이아웃에 알맞은 값을 넣어주는 역할
+//getItemCount, onCreaterViewHolder, onBindViewHolder 의 3개 함수가 필수로 들어간다.
+        class MyAdapter(val binding: ItemMainBinding): RecyclerView.Adapter<RecyclerView.ViewHolder>()
+        {
+            override fun getItemCount(): Int = datas.size
 
-        //어답터 인스턴스 생성
-        myRecyclerAdapter = MyRecyclerAdapter()
+            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder = MyViewHolder(
+                ItemMainBinding.inflate(LayoutInflater.from(parent.context),parent, false))
 
-        myRecyclerAdapter.submitList(this.modelList)
+            override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+                val binding = (holder as MyViewHolder).binding
 
-        // 리사이클러 뷰 설정
+                binding.itemData.text = datas[position]
+
+                binding.itemRoot.setOnClickListener {
+                    binding.itemData.text="눌러짐"
+                }
+            }
+        }
+        binding.recyclerView.adapter = MyAdapter(datas)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.addItemDecoration(DividerItemDecoration(this,LinearLayoutManager.VERTICAL))
     }
+    //View Holder
+    class MyViewHolder(val binding: ItemMainBinding): RecyclerView.ViewHolder(binding.root)
 }

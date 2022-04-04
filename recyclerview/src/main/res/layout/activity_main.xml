@@ -2,18 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RecyclerView 테스트"
-        android:textSize="32dp"
-        android:textColor="#FFFFFFFF"
-        android:padding="8dp"
-        android:background="#FF3F3F3F"
-        android:gravity="center"/>
+    android:orientation="vertical">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
