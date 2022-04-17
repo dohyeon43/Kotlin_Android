@@ -2,68 +2,25 @@ package com.example.recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.recyclerview.adapter.MyAdapter
 import com.example.recyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
     var TAG: String = "로그"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val datas = mutableListOf<String>()
-        for (i in 1..10) {
-            datas.add("item $i")
-        }
-        binding.recyclerView.adapter = CustomAdapter(datas)
-        binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        binding.recyclerView.addItemDecoration(DividerItemDecoration(this,LinearLayoutManager.VERTICAL))
-    }
-}
 
-//Adapter : 뷰홀더에 구성된 레이아웃에 알맞은 값을 넣어주는 역할
-//getItemCount, onCreateViewHolder, onBindViewHolder 의 3개 함수가 필수로 들어간다.
-class CustomAdapter(private val datas: MutableList<String>) :
-RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+        val data = arrayListOf<Pair<String,String>>(Pair("https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2014%2F09%2F21%2F14%2F39%2Fsurface-455124__480.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fko%2Fimages%2Fsearch%2F%25EB%25B9%2584%2F&tbnid=YTFoYOX0Qu2vSM&vet=12ahUKEwjdia_H-pn3AhUYSfUHHco6DgQQMygCegUIARDcAQ..i&docid=3t2BMyjwVXQjaM&w=826&h=480&q=%EC%9D%B4%EB%AF%B8%EC%A7%80&ved=2ahUKEwjdia_H-pn3AhUYSfUHHco6DgQQMygCegUIARDcAQ","크흠"),
+        Pair("https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2014%2F09%2F21%2F14%2F39%2Fsurface-455124__480.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fko%2Fimages%2Fsearch%2F%25EB%25B9%2584%2F&tbnid=YTFoYOX0Qu2vSM&vet=12ahUKEwjdia_H-pn3AhUYSfUHHco6DgQQMygCegUIARDcAQ..i&docid=3t2BMyjwVXQjaM&w=826&h=480&q=%EC%9D%B4%EB%AF%B8%EC%A7%80&ved=2ahUKEwjdia_H-pn3AhUYSfUHHco6DgQQMygCegUIARDcAQ","크흠"))
 
-    /**
-     * Provide a reference to the type of views that you are using
-     * (custom ViewHolder).
-     */
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val textView: TextView
-
-        init {
-            // Define click listener for the ViewHolder's View.
-            textView = view.findViewById(R.id.item_data)
+        binding.recyclerView.apply {//apply를 사용해 코드를 간편하게 만듬. kotlin에 있는 이런 함수들도 공부해야겠다.
+            adapter = MyAdapter(data)
+            layoutManager = LinearLayoutManager(context,RecyclerView.VERTICAL,false)
+            //레이아웃 매니저로 리사이클러 뷰가 어떻게 배치될지 정한다.
         }
     }
-
-    // Create new views (invoked by the layout manager)
-    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        // Create a new view, which defines the UI of the list item
-        val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.item_main, viewGroup, false)
-
-        return ViewHolder(view)
-    }
-
-    // Replace the contents of a view (invoked by the layout manager)
-    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-
-        // Get element from your dataset at this position and replace the
-        // contents of the view with that element
-        viewHolder.textView.text = datas[position]
-    }
-
-    // Return the size of your dataset (invoked by the layout manager)
-    override fun getItemCount() = datas.size
-
 }
