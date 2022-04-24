@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Android_kotlin"
-include ':app'
+include ':MVVM'
 include ':recyclerview'
 include ':dialog'
 include ':spinner'
