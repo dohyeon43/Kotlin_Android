@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         ArrayAdapter.createFromResource(
             this,
             R.array.my_array,
-            R.layout.activity_main
+            androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
         ).also { adapter ->
             spinner.onItemSelectedListener
             spinner.adapter = adapter
