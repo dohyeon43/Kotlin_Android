@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/dialog" />
             <option value="$PROJECT_DIR$/recyclerview" />
             <option value="$PROJECT_DIR$/spinner" />
+            <option value="$PROJECT_DIR$/viewpager2" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
