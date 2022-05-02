@@ -35,6 +35,13 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-```
+## MVVM + CA(클린 아키텍처) 구조 공부
+### Model
+####Data
+####Domain
+### ViewModel
+### View
+
+
 
 
