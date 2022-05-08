@@ -38,5 +38,13 @@ class MainActivity : AppCompatActivity() {
 ```
 ## MVVM + CA(클린 아키텍처) 구조 공부
 ### DATA(Model)
+서버와 통신하는 계층
+ㄴ Remote
+ㄴ Cache
+ㄴ DataSouce
+
 ### DOMAIN(Model)
+모델 제공 계층
+
 ### PRESENTATION(ViewModel, View)
+실제 앱이 구동되는 계층
