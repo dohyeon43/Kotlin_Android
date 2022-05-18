@@ -21,5 +21,7 @@ class MainActivity : AppCompatActivity() {
         mBinding = DataBindingUtil.setContentView(this,R.layout.activity_main)
         mBinding.lifecycleOwner = this
         mBinding.viewModel = model
+
+
     }
 }
