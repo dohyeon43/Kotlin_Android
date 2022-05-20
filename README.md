@@ -19,6 +19,7 @@ LiveData, SingleLiveEvent, Event 구현 예정
 
 >## MVVM이란 무엇인가?
 >### MVVM 아키텍처의 발단
+>.
 >
 >>### 장점
 >>* View와 Model이 서로 전혀 알지 못하기에 독립성을 유지할 수 있다
