@@ -17,9 +17,12 @@ LiveData, SingleLiveEvent, Event 구현 예정
 # 공부 정리
 #### 노션에 정리하려 했는데... 여기가 편할 것 같습니다.
 
+>## Context란?
+
 >## MVVM이란 무엇인가?
->### MVVM 아키텍처의 발단
->.
+>>### MVVM 아키텍처의 발단
+>>적은 리소스 안에서 돌아가는 모바일 앱의 특성 상, 앱이 파괴된다.
+>>그로 인해 
 >
 >>### 장점
 >>* View와 Model이 서로 전혀 알지 못하기에 독립성을 유지할 수 있다
@@ -42,7 +45,7 @@ LiveData, SingleLiveEvent, Event 구현 예정
 >-------------------------------
 >### 참고 이미지
 >![image](https://user-images.githubusercontent.com/81676485/168805442-04940e2b-9e32-443e-90f0-a2c88f1493dc.png)
-
+>### [아키텍처 구조 - 안드로이드 공식 사이트](https://developer.android.com/jetpack/guide?hl=ko)
 ## RecyclerView
 ```
 import android.view.LayoutInflater
