@@ -15,9 +15,7 @@ dependencyResolutionManagement {
 rootProject.name = "Android_kotlin"
 include ':MVVM'
 include ':recyclerview'
-include ':dialog'
 include ':spinner'
 include ':Data'
 include ':Domain'
 include ':soloproject1_noname'
-include ':timerapp'
