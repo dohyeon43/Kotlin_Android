@@ -34,7 +34,7 @@ class MyAdapter(val init: ArrayList<Pair<String,String>> = ArrayList()) :
     //다음과 같이 호출되면 MyViewHolder에 값들을 리턴해준다.
 
 
-        override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as MyViewHolder).apply{
             // 뷰홀더에서 구현한 bindItem메서드를 호출해 뷰홀더에 아이템을 바인딩
             bindItem(data.get(position))
