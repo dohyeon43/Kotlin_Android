@@ -10,8 +10,7 @@
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        tools:context=".MainActivity">
+        android:layout_width="match_parent">
         <TextView
             android:id="@+id/tv"
             android:layout_width="wrap_content"

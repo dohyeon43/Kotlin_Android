@@ -3,6 +3,7 @@ package com.example.study1
 import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -25,11 +26,14 @@ class MainActivity : AppCompatActivity() {
         */
 
         //DataBinding
+        setContentView(R.layout.activity_data)
         val binding : ActivityDataBinding =
             DataBindingUtil.setContentView(this,R.layout.activity_data)
         binding.btn.setOnClickListener(View.OnClickListener {
             mutableLiveData.value = mutableLiveData.value?.plus(1)
+            Log.e("TEST","잘 실행됨.")
         })
+
 
 
 
