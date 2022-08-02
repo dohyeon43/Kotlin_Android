@@ -17,8 +17,10 @@ LiveData, SingleLiveEvent, Event 구현 예정
 # 공부 정리
 
 >## Activity와 Fragment (생명주기, 차이점, 사용법)
+>### Activity LifeCycle
 >![image](https://mblogthumb-phinf.pstatic.net/MjAxOTA5MDZfMTI5/MDAxNTY3Njk5MzA4Nzcw.s0jYFSugA5Kg82sMc8XBFuI5hcmUfIzSvohMILrJ2-Mg.rKHyPbRnf-9mTcwL-kfDutAferD3rk1gg_eAv7qxDsUg.PNG.devks0228/image.png?type=w800)
->![image](https://velog.velcdn.com/images%2Feun3673%2Fpost%2F1cee08b0-cc76-4680-8863-3d44726a69b1%2F22AC6833597EDA1626.png)
+>### Fragment LifeCycle
+>![image]([https://velog.velcdn.com/images%2Feun3673%2Fpost%2F1cee08b0-cc76-4680-8863-3d44726a69b1%2F22AC6833597EDA1626.png](https://anjaekwang.github.io/assets/images/AndroidConcept2/3.png))
 
 >## Context란?
 
