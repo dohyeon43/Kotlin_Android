@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DaggerHilt" />
             <option value="$PROJECT_DIR$/RecyclerView" />
             <option value="$PROJECT_DIR$/Room" />
             <option value="$PROJECT_DIR$/buildSrc" />
