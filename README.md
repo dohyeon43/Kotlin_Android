@@ -15,7 +15,8 @@ LiveData, SingleLiveEvent, Event 구현 예정
 
 
 # 공부 정리
-#### 노션에 정리하려 했는데... 여기가 편할 것 같습니다.
+
+>## Activity와 Fragment (생명주기, 차이점, 사용법)
 
 >## Context란?
 
