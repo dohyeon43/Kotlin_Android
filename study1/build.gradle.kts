@@ -33,7 +33,11 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
-        viewBinding = true
+        //뷰 바인딩
+        //viewBinding = true
+
+        //데이터 바인딩
+        dataBinding = true
     }
 }
 
