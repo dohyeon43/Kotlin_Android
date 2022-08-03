@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding : ActivityMainBinding
-        = DataBindingUtil.setContentView(this,R.layout.activity_main)
+                = DataBindingUtil.setContentView(this,R.layout.activity_main)
 
         val list : List<Info> = listOf(
             Info("첫 번째 아이템","첫 번째 내용입니다."),
@@ -19,9 +19,11 @@ class MainActivity : AppCompatActivity() {
             Info("세 번째 아이템","세 번째 내용입니다."),
             Info("네 번째 아이템","네 번째 내용입니다.")
         )
+        val mainAdapter = MainAdapter()
         binding.recyclerView.apply {
-            adapter = MainAdapter(list)
+            adapter = mainAdapter
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)
         }
+        mainAdapter.submitList(list)
     }
 }
