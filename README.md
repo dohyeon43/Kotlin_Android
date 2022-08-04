@@ -4,16 +4,6 @@
 안드로이드 디자인 패턴을 
 여러 모듈로 나눠 구현하고 공부하는 레포지토리입니다.
 
-### [구현한 기능]
-RecyclerView, Spinner 구현해보았습니다.
-
-### [아키텍처]
-MVVM 패턴 구현 예정
-
-### [아키텍처 관련 기능]
-LiveData, SingleLiveEvent, Event 구현 예정
-
-
 # 공부 정리
 
 >## Activity와 Fragment (생명주기, 차이점, 사용법)
