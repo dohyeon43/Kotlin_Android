@@ -10,6 +10,8 @@ import com.example.recyclerview.databinding.ActivityMainBinding
 import com.example.recyclerview.databinding.ItemMainBinding
 
 class MainAdapter: ListAdapter<Info, MainAdapter.MainViewHolder>(MainDiffUtilCallBack) {
+
+
     inner class MainViewHolder (val binding : ItemMainBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(data: Info){
             binding.item = data

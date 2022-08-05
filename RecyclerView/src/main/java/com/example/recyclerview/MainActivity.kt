@@ -10,6 +10,8 @@ import com.example.recyclerview.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         val binding : ActivityMainBinding
                 = DataBindingUtil.setContentView(this,R.layout.activity_main)
 
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             Info("네 번째 아이템","네 번째 내용입니다.")
         )
         val mainAdapter = MainAdapter()
+
         binding.recyclerView.apply {
             adapter = mainAdapter
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)
