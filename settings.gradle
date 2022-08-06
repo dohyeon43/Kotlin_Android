@@ -16,4 +16,3 @@ rootProject.name = "Android_kotlin"
 include ':RecyclerView'
 include ':Room'
 include ':study1'
-include ':DaggerHilt'
