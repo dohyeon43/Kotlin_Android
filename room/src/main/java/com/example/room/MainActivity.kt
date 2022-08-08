@@ -1,4 +1,4 @@
-package com.example.spinner
+package com.example.room
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

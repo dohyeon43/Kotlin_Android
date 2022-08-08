@@ -1,4 +1,4 @@
-package com.example.spinner
+package com.example.room
 
 import org.junit.Test
 
