@@ -5,4 +5,5 @@ data class Student(
     val grade : Int,
     val classNum : Int,
     val stuNum : Int,
+    val id: Int
 )

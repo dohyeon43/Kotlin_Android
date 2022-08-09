@@ -15,7 +15,7 @@ interface StudentDao {
 
     //이름이 name인 개체 가져오기
     @Query("SELECT * FROM student_table WHERE name = :name")
-    fun getByName(name: String)
+    fun getByName(name: String):Student
 
     //이름이 name인 개체 삭제
     @Query("DELETE FROM student_table WHERE name = :name")
