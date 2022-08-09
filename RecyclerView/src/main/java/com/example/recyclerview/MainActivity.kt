@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val binding : ActivityMainBinding
                 = DataBindingUtil.setContentView(this,R.layout.activity_main)
+        //Data Binding
 
         val list : List<Info> = listOf(
             Info("첫 번째 아이템","첫 번째 내용입니다."),
@@ -21,12 +22,17 @@ class MainActivity : AppCompatActivity() {
             Info("세 번째 아이템","세 번째 내용입니다."),
             Info("네 번째 아이템","네 번째 내용입니다.")
         )
+        //임의로 데이터가 들어있는 리스트를 생성
+
+
         val mainAdapter = MainAdapter()
+        //Adapter 객체 생성
 
         binding.recyclerView.apply {
-            adapter = mainAdapter
-            layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)
+            adapter = mainAdapter//recyclerView에 Adapter를 붙여주고
+            layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)//LayoutManager까지 설정
         }
         mainAdapter.submitList(list)
+        //Adapter에 값을 넘겨주는 과정
     }
 }
