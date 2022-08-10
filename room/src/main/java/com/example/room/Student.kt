@@ -4,5 +4,6 @@ data class Student(
     val name : String,
     val grade : String,
     val classNum : String,
-    val stuNum : String
+    val stuNum : String,
+    val id : Int
 )

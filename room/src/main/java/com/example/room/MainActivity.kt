@@ -1,6 +1,7 @@
 package com.example.room
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -23,8 +24,8 @@ class MainActivity : AppCompatActivity() {
             adapter = mainAdapter
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)
         }
-        db!!.studentDao().deleteAll()
-        val list = db!!.studentDao().getAll()
+        val list : List<Student> = db!!.studentDao().getAll() ?: emptyList()
+        Log.e("TEST",list.toString())
         mainAdapter.submitList(list)
 
         binding.btnSubmit.setOnClickListener(View.OnClickListener {
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
                 binding.classNum.text.toString(),
                 binding.stuNum.text.toString()
             )
+            Log.e("TEST","정상적으로 데이터베이스에 값 들어감")
         })
 
     }

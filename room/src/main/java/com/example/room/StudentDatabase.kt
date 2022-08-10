@@ -8,10 +8,8 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [StudentEntity::class],
-    version = 2,
-    autoMigrations = [
-        AutoMigration(from = 1, to = 2)
-                     ])
+    version = 3,
+)
 
 abstract class StudentDatabase : RoomDatabase(){
     abstract fun studentDao() : StudentDao
@@ -26,7 +24,8 @@ abstract class StudentDatabase : RoomDatabase(){
                         context.applicationContext,
                         StudentDatabase::class.java,
                         "student_database"
-                    ).allowMainThreadQueries()
+                    ).allowMainThreadQueries().
+                    fallbackToDestructiveMigration()
                         .build()
                 }
             }
