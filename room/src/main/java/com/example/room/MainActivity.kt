@@ -23,15 +23,16 @@ class MainActivity : AppCompatActivity() {
             adapter = mainAdapter
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)
         }
+        db!!.studentDao().deleteAll()
         val list = db!!.studentDao().getAll()
         mainAdapter.submitList(list)
 
         binding.btnSubmit.setOnClickListener(View.OnClickListener {
             db.studentDao().addStudent(
                 binding.name.text.toString(),
-                binding.grade.text.toString().toInt(),
-                binding.classNum.text.toString().toInt(),
-                binding.stuNum.text.toString().toInt()
+                binding.grade.text.toString(),
+                binding.classNum.text.toString(),
+                binding.stuNum.text.toString()
             )
         })
 
