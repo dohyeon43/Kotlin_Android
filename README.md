@@ -2,7 +2,6 @@
 
 안드로이드 공부 정리
 
-# 공부 정리
 
 >## Activity와 Fragment (생명주기, 차이점, 사용법)
 >### Activity LifeCycle
