@@ -1,58 +1,38 @@
 package com.example.retrofit2
 
-import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
-import com.example.retrofit2.databinding.ActivityMainBinding
+import android.os.Bundle
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.recyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+        val binding : ActivityMainBinding
+                = DataBindingUtil.setContentView(this,R.layout.activity_main)
+        //Data Binding
 
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        val list : List<Info> = listOf(
+            Info("첫 번째 아이템","첫 번째 내용입니다."),
+            Info("두 번째 아이템","두 번째 내용입니다."),
+            Info("세 번째 아이템","세 번째 내용입니다."),
+            Info("네 번째 아이템","네 번째 내용입니다.")
+        )
+        //임의로 데이터가 들어있는 리스트를 생성
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+
+        val mainAdapter = MainAdapter()
+        //Adapter 객체 생성
+
+        binding.recyclerView.apply {
+            adapter = mainAdapter//recyclerView에 Adapter를 붙여주고
+            layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)//LayoutManager까지 설정
         }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
+        mainAdapter.submitList(list)
+        //Adapter에 값을 넘겨주는 과정
     }
 }
