@@ -12,6 +12,8 @@ abstract class StudentDatabase : RoomDatabase(){
 
     companion object {
         private var instance: StudentDatabase? = null
+
+
         fun getInstance(context: Context): StudentDatabase? {
             if (instance == null) {
                 synchronized(StudentDatabase::class){
