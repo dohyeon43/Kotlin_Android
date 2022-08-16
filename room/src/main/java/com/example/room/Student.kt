@@ -2,8 +2,8 @@ package com.example.room
 
 data class Student(
     val name : String,
-    val grade : Int,
-    val classNum : Int,
-    val stuNum : Int,
-    val id: Int
+    val grade : String,
+    val classNum : String,
+    val stuNum : String,
+    val id : Int
 )

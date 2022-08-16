@@ -1,10 +1,7 @@
 # Kotlin_Android
 
-라이브러리 기능들과 
-안드로이드 디자인 패턴을 
-여러 모듈로 나눠 구현하고 공부하는 레포지토리입니다.
+안드로이드 공부 정리
 
-# 공부 정리
 
 >## Activity와 Fragment (생명주기, 차이점, 사용법)
 >### Activity LifeCycle
