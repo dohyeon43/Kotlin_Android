@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.iml" filepath="$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.androidTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/firebase/Android_kotlin.FireBase.unitTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.main.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.iml" filepath="$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Room/Android_kotlin.Room.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/retrofit2/Android_kotlin.retrofit2.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.iml" filepath="$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/study1/Android_kotlin.study1.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kotlin_Android.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Kotlin_Android.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kotlin_Android.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Kotlin_Android.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kotlin_Android.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Kotlin_Android.buildSrc.test.iml" />
+    </modules>
+  </component>
+</project>
