@@ -2,6 +2,8 @@
 
 안드로이드 공부 정리
 
+//TODO따로 파일 빼서 정리하기
+
 
 >## Activity와 Fragment (생명주기, 차이점, 사용법)
 >### Activity LifeCycle
