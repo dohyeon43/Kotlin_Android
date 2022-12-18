@@ -11,8 +11,6 @@
 >### Fragment LifeCycle
 >![image]([https://velog.velcdn.com/images%2Feun3673%2Fpost%2F1cee08b0-cc76-4680-8863-3d44726a69b1%2F22AC6833597EDA1626.png](https://anjaekwang.github.io/assets/images/AndroidConcept2/3.png))
 
->## Context란??
-
 >## MVVM이란 무엇인가?
 >### MVVM 아키텍처의 발단
 >적은 리소스 안에서 돌아가는 모바일 앱의 특성 상, 앱이 파괴된다.
