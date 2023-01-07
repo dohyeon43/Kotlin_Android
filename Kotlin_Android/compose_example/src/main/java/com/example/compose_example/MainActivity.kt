@@ -1,9 +1,11 @@
 package com.example.compose_example
 
 import android.os.Bundle
+import android.text.style.MetricAffectingSpan
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -21,7 +23,7 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
-                
+
                 ) {
                     Greeting("Android")
                 }
@@ -33,6 +35,13 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
+}
+
+@Composable
+fun AffirmationCard(affectingSpan: MetricAffectingSpan, modifier: Modifier){
+    Card(modifier = Modifier){
+        
+    }
 }
 
 @Preview(showBackground = true)
