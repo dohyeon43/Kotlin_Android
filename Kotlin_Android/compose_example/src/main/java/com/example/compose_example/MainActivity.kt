@@ -40,7 +40,7 @@ fun Greeting(name: String) {
 @Composable
 fun AffirmationCard(affectingSpan: MetricAffectingSpan, modifier: Modifier){
     Card(modifier = Modifier){
-        
+
     }
 }
 

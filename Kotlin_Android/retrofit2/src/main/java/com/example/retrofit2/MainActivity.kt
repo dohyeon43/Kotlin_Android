@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclerview.databinding.ActivityMainBinding
+import com.example.retrofit2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,15 +24,5 @@ class MainActivity : AppCompatActivity() {
         )
         //임의로 데이터가 들어있는 리스트를 생성
 
-
-        val mainAdapter = MainAdapter()
-        //Adapter 객체 생성
-
-        binding.recyclerView.apply {
-            adapter = mainAdapter//recyclerView에 Adapter를 붙여주고
-            layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL,false)//LayoutManager까지 설정
-        }
-        mainAdapter.submitList(list)
-        //Adapter에 값을 넘겨주는 과정
     }
 }
