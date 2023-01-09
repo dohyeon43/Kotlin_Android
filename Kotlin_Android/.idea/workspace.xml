@@ -10,20 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5e2042f-3930-44dd-bf82-f93d92e9e59b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_4_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_startup_startup_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/libs/buildSrc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/libs/buildSrc.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose_example/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/compose_example/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose_example/src/main/java/com/example/compose_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/compose_example/src/main/java/com/example/compose_example/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retrofit2/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/retrofit2/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retrofit2/src/main/java/com/example/retrofit2/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/retrofit2/src/main/java/com/example/retrofit2/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retrofit2/src/main/java/com/example/retrofit2/MainAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/retrofit2/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/retrofit2/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/room/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/room/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2FbnL5ezmo2qsm8vxqsWnmgysdy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -307,7 +312,7 @@
       </method>
     </configuration>
     <configuration name="firebase" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="Android_kotlin.firebase.main" />
+      <module name="Android_kotlin.FireBase.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
