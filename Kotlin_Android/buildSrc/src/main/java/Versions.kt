@@ -15,6 +15,7 @@ object Versions {
     const val LIFECYCLE_KTX = "2.3.1"
     const val ROOM = "2.4.2"
     const val CONSTRAINT = "2.3.1"
+    const val COMPOSE = "1.3.2"
 
     const val HILT = "2.38.1"
     const val MATERIAL = "1.5.0"

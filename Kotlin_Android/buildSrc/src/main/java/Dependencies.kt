@@ -24,6 +24,7 @@ object Google {
     const val MATERIAL = "com.google.android.material:material:${Versions.MATERIAL}"
 }
 
+
 object Libraries {
     const val RETROFIT = "com.squareup.retrofit2:retrofit:${Versions.RETROFIT}"
     const val RETROFIT_CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:${Versions.RETROFIT}"
