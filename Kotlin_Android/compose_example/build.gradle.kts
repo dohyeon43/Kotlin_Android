@@ -5,6 +5,11 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+repositories {
+    google()
+    mavenCentral()
+}
+
 android {
     compileSdk = 33
 
@@ -52,15 +57,18 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.compose.ui:ui:${Versions.COMPOSE}")
-    implementation("androidx.compose.material:material:${Versions.COMPOSE}")
-    implementation("androidx.compose.ui:ui-tooling-preview:${Versions.COMPOSE}")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
-    implementation("androidx.activity:activity-compose:1.6.1")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.4")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
+    implementation(Dependencies.AndroidX.CORE_KTX)
+    implementation(Dependencies.AndroidX.COMPOSE_UI)
+    implementation("androidx.compose.material:material:1.3.1")
+    implementation(Dependencies.AndroidX.COMPOSE_PREVIEW)
+    implementation(Dependencies.AndroidX.LIFECYCLE_LIVEDATA_KTX)
+    implementation(Dependencies.AndroidX.ACTIVITY_COMPOSE)
+    implementation(Dependencies.AndroidX.CORE_KTX)
+    implementation(Dependencies.AndroidX.ACTIVITY_KTX)
+    implementation("androidx.activity:activity-ktx:1.6.1")
+    testImplementation(Dependencies.UnitTest.JUNIT)
+    androidTestImplementation(Dependencies.AndroidTest.ANDROID_JUNIT)
+    androidTestImplementation(Dependencies.AndroidTest.ESPRESSO_CORE)
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:${Versions.COMPOSE}")
     debugImplementation("androidx.compose.ui:ui-tooling:${Versions.COMPOSE}")
     debugImplementation("androidx.compose.ui:ui-test-manifest:${Versions.COMPOSE}")

@@ -47,3 +47,7 @@ android {
         androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     }
 }
+dependencies {
+    implementation("androidx.core:core-ktx:+")
+    implementation("androidx.core:core-ktx:+")
+}
