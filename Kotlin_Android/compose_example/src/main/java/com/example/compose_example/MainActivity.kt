@@ -1,14 +1,12 @@
 package com.example.compose_example
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.style.MetricAffectingSpan
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -25,7 +23,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
 
                 ) {
-                    Greeting("Android")
+                    ColumnText("Android","text")
+                    RowText("Android","text")
                 }
             }
         }
@@ -34,13 +33,44 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+    Android_kotlinTheme() {
+        Text(text = "Hello $name!")
+    }
+
+}
+
+@Composable
+fun ColumnText(name : String, content : String){
+     Column() {
+         Text(text = name)
+         Text(text = content)
+     }
+}
+
+@Composable
+fun RowText(name : String, content : String){
+    Row() {
+        Text(text = name)
+        Text(text = content)
+    }
+}
+
+@Composable
+fun BoxText(name : String, content : String){
+    Box() {
+        Text(text = name)
+        Text(text = content)
+    }
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     Android_kotlinTheme {
-        Greeting("Android")
+        Column() {
+            ColumnText("Android","text.....")
+            RowText("Android","text.....")
+            BoxText("Android","text.....")
+        }
     }
 }
