@@ -36,18 +36,21 @@ android {
             jvmTarget = "1.8"
         }
     }
-
-    dependencies {
-        implementation("androidx.core:core-ktx:1.7.0")
-        implementation("androidx.appcompat:appcompat:1.4.1")
-        implementation("com.google.android.material:material:1.5.0")
-        implementation("androidx.constraintlayout:constraintlayout:2.1.3")
-        testImplementation("junit:junit:4.13.2")
-        androidTestImplementation("androidx.test.ext:junit:1.1.3")
-        androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    }
 }
 dependencies {
-    implementation("androidx.core:core-ktx:+")
-    implementation("androidx.core:core-ktx:+")
+    implementation(Dependencies.AndroidX.CORE_KTX)
+    implementation(Dependencies.AndroidX.COMPOSE_UI)
+    implementation("androidx.compose.material:material:1.3.1")
+    implementation(Dependencies.AndroidX.COMPOSE_PREVIEW)
+    implementation(Dependencies.AndroidX.LIFECYCLE_LIVEDATA_KTX)
+    implementation(Dependencies.AndroidX.ACTIVITY_COMPOSE)
+    implementation(Dependencies.AndroidX.CORE_KTX)
+    implementation(Dependencies.AndroidX.ACTIVITY_KTX)
+    implementation("androidx.activity:activity-ktx:1.6.1")
+    testImplementation(Dependencies.UnitTest.JUNIT)
+    androidTestImplementation(Dependencies.AndroidTest.ANDROID_JUNIT)
+    androidTestImplementation(Dependencies.AndroidTest.ESPRESSO_CORE)
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:${Versions.COMPOSE}")
+    debugImplementation("androidx.compose.ui:ui-tooling:${Versions.COMPOSE}")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:${Versions.COMPOSE}")
 }

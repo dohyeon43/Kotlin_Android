@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun (name: String) {
     Android_kotlinTheme() {
         Text(text = "Hello $name!")
     }
