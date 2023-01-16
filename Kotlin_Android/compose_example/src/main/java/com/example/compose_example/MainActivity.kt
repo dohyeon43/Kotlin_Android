@@ -9,6 +9,8 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -74,8 +76,15 @@ fun BoxText(name : String, content : String){
 @Composable
 fun DefaultPreview() {
     Android_kotlinTheme {
-        Column() {
             MessageCard(Message("나다","그렇다"))
+    }
+}
+
+@Composable
+fun LazyColumnView(messages: List<Message>) {
+    LazyColumn {
+        items(messages) { message ->
+            MessageCard(message)
         }
     }
 }
@@ -84,7 +93,7 @@ fun DefaultPreview() {
 fun MessageCard(msg: Message) {
     Row(modifier = Modifier.padding(all = 8.dp)) {
         Image(
-            painter = painterResource(androidx.core.R.drawable.notify_panel_notification_icon_bg),
+            painter = painterResource(R.drawable.ic_launcher_background),
             contentDescription = null,
             modifier = Modifier
                 .size(40.dp)
@@ -95,7 +104,7 @@ fun MessageCard(msg: Message) {
 
         Column {
             Text(
-                text = "author",
+                text = msg.author,
                 color = MaterialTheme.colors.secondaryVariant,
                 style = MaterialTheme.typography.subtitle2
             )
@@ -104,7 +113,7 @@ fun MessageCard(msg: Message) {
 
             Surface(shape = MaterialTheme.shapes.medium, elevation = 1.dp) {
                 Text(
-                    text = "body",
+                    text = msg.text,
                     modifier = Modifier.padding(all = 4.dp),
                     style = MaterialTheme.typography.body2
                 )
