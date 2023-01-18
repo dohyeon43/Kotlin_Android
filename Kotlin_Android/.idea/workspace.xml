@@ -9,6 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a5e2042f-3930-44dd-bf82-f93d92e9e59b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RecyclerView/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/build.gradle.kts" afterDir="false" />
@@ -17,6 +18,9 @@
       <change beforePath="$PROJECT_DIR$/compose_example/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/compose_example/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/room/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/room/build.gradle.kts" afterDir="false" />
     </list>
+=======
+    <list default="true" id="a5e2042f-3930-44dd-bf82-f93d92e9e59b" name="Changes" comment="" />
+>>>>>>> compose
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

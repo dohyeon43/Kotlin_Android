@@ -18,7 +18,6 @@
             <option value="$PROJECT_DIR$/firebase" />
             <option value="$PROJECT_DIR$/hilt" />
             <option value="$PROJECT_DIR$/retrofit2" />
-            <option value="$PROJECT_DIR$/study1" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -39,6 +39,7 @@
     <option name="modulesWithSuppressedNotConfigured">
       <set>
         <option value="Android_kotlin.RecyclerView" />
+        <option value="Android_kotlin.compose_example" />
       </set>
     </option>
   </component>
