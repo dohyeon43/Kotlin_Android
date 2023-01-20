@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_kotlin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.FireBase.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.main.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.main.iml" />
@@ -19,6 +15,14 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/compose_example/Android_kotlin.compose_example.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/compose_example/Android_kotlin.compose_example.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/compose_example/Android_kotlin.compose_example.main.iml" filepath="$PROJECT_DIR$/.idea/modules/compose_example/Android_kotlin.compose_example.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/compose_example/Android_kotlin.compose_example.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/compose_example/Android_kotlin.compose_example.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Android_kotlin.coroutine.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FireBase/Android_kotlin.firebase.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hilt/Android_kotlin.hilt.iml" filepath="$PROJECT_DIR$/.idea/modules/hilt/Android_kotlin.hilt.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hilt/Android_kotlin.hilt.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/hilt/Android_kotlin.hilt.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hilt/Android_kotlin.hilt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hilt/Android_kotlin.hilt.main.iml" />

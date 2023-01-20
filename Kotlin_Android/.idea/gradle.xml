@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/Room" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/compose_example" />
+            <option value="$PROJECT_DIR$/coroutine" />
             <option value="$PROJECT_DIR$/firebase" />
             <option value="$PROJECT_DIR$/hilt" />
             <option value="$PROJECT_DIR$/retrofit2" />
