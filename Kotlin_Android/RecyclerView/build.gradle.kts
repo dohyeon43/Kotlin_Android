@@ -47,6 +47,7 @@ dependencies {
     implementation(Dependencies.AndroidX.CORE_KTX)
     implementation(Dependencies.AndroidX.ACTIVITY_KTX)
     implementation("androidx.activity:activity-ktx:1.6.1")
+    implementation("androidx.core:core-ktx:+")
     testImplementation(Dependencies.UnitTest.JUNIT)
     androidTestImplementation(Dependencies.AndroidTest.ANDROID_JUNIT)
     androidTestImplementation(Dependencies.AndroidTest.ESPRESSO_CORE)
