@@ -1,2 +1,2 @@
 rootProject.name = "Android_kotlin"
-include(":RecyclerView")
+include(":mvi_account_book")

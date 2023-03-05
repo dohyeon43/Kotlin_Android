@@ -3,13 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_kotlin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.main.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerView/Android_kotlin.RecyclerView.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_kotlin.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_kotlin.buildSrc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_kotlin.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_kotlin.buildSrc.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_kotlin.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_kotlin.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.iml" filepath="$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mvi_account_book/Android_kotlin.mvi_account_book.unitTest.iml" />
     </modules>
   </component>
 </project>
