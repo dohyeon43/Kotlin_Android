@@ -30,11 +30,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     buildFeatures {
         compose = true
@@ -51,17 +51,17 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
-    implementation("androidx.activity:activity-compose:1.3.1")
-    implementation("androidx.compose.ui:ui:${rootProject.extra["compose_ui_version"]}")
-    implementation("androidx.compose.ui:ui-tooling-preview:${rootProject.extra["compose_ui_version"]}")
-    implementation("androidx.compose.material:material:1.2.0")
-    implementation("androidx.activity:activity-ktx:1.6.1")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:${rootProject.extra["compose_ui_version"]}")
+    implementation(Dependencies.AndroidX.CORE_KTX)
+    implementation(Dependencies.AndroidX.LIFECYCLE_KTX)
+    implementation(Dependencies.AndroidX.ACTIVITY_COMPOSE)
+    implementation(Dependencies.AndroidX.COMPOSE_UI)
+    implementation(Dependencies.AndroidX.COMPOSE_PREVIEW)
+    implementation(Dependencies.AndroidX.COMPOSE_MATERIAL)
+    implementation(Dependencies.AndroidX.ACTIVITY_KTX)
+    testImplementation(Dependencies.UnitTest.JUNIT)
+    androidTestImplementation(Dependencies.AndroidTest.ANDROID_JUNIT)
+    androidTestImplementation(Dependencies.AndroidTest.ESPRESSO_CORE)
+    androidTestImplementation(Dependencies.AndroidTest.COMPOSE_JUNIT)
     debugImplementation("androidx.compose.ui:ui-tooling:${rootProject.extra["compose_ui_version"]}")
     debugImplementation("androidx.compose.ui:ui-test-manifest:${rootProject.extra["compose_ui_version"]}")
 }
