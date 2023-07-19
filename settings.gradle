@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Kotlin_Android"
 include ':mvi_accountbook'
+include ':PushMessaging'
+include ':push_messaging'
