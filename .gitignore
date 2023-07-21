@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+push_messaging/google-services.json
