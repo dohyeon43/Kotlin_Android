@@ -1,4 +1,4 @@
-package android.study.push_messaging
+package android.study.fcm
 
 import org.junit.Test
 

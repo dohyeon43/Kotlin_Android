@@ -1,4 +1,4 @@
-package android.study.push_messaging
+package android.study.fcm
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import android.study.push_messaging.ui.theme.Kotlin_AndroidTheme
+import android.study.fcm.ui.theme.Kotlin_AndroidTheme
+import android.widget.TextView
+import com.google.firebase.messaging.FirebaseMessaging
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,17 +25,29 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    TvResult("Android")
+                    initFirebase()?.let { TvResult(it, modifier = Modifier) }
                 }
             }
         }
     }
+
+    private fun initFirebase() : String? {
+        var result = ""
+        FirebaseMessaging.getInstance().token
+            .addOnCompleteListener {task ->
+                if(task.isSuccessful){
+                    result = task.result
+                }
+
+            }
+        return result
+    }
 }
 
 @Composable
-fun TvResult(name: String, modifier: Modifier = Modifier) {
+fun TvResult(text : String, modifier: Modifier ) {
     Text(
-        text = "Hello $name!",
+        text =text,
         modifier = modifier
     )
 }
@@ -41,8 +56,8 @@ fun TvResult(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun MainPreview() {
     Kotlin_AndroidTheme {
-        TvResult("Android")
+        TvResult("hi", Modifier)
     }
 }

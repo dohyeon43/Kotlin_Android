@@ -1,4 +1,4 @@
-package android.study.push_messaging.ui.theme
+package android.study.fcm.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
